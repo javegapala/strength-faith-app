@@ -68,7 +68,7 @@ Every time you interrupt the loop, you weaken it. Your freedom isn’t in a fini
       setStartDate(storedStart)
       const start = new Date(storedStart)
       const now = new Date()
-      const diffDays = Math.floor((now - start) / (1000 * 60 * 60 * 24)) + 1
+      const diffDays = Math.floor((now.getTime() - start.getTime()) / (1000 * 60 * 60 * 24)) + 1
       setAvailableDay(diffDays)
     }
   }, [])
