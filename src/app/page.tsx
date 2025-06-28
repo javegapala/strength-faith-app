@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 
 export default function StrengthAndFaithCoachSlides() {
-  const [startDate, setStartDate] = useState(null)
+  const [startDate, setStartDate] = useState<string | null>(null)
   const [availableDay, setAvailableDay] = useState(0)
 
   const days = [
